@@ -1,0 +1,446 @@
+[
+  {
+    "ref": "a5dd0819-24db-4f56-8adb-d6d57190aa91",
+    "keyword": "136fce6d46648c2f9e4ad563a4771130",
+    "answer": "a ok",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "fbc71e656745b599c5de93f44ddf73eb"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212227234716"
+  },
+  {
+    "ref": "d9ec0a2a-7ac9-4720-9f99-6c8996e85316",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "esta programado para solo leer el nombre",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "03d930d7888c00e9ffd7df9fdcad8d29"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "0be709f3-8e54-474e-8f2b-0a1dd6845f08",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "del archivo",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "b7ac301492aff61163f235ea84b8976c"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "90e3e877-4c8f-441a-b8e2-9ac64044699e",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "pero al haber un comentario ya me cambia la estructura",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "950f1f3f38780642286917d7baa87944"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "7fc82032-f1aa-4a63-821b-d4b6ce3ec895",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "ok",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "5024d8306739a7b2b633ca6e46c22e04"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "e5ea0369-f08f-42b8-bd63-b7c3afa9cdbc",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "bueno enviame las estructura si es que son varias",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "31d4d4f9e8138d13cfa36b54283e517b"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "532c10a0-fe5a-435e-84e2-fa856e3ddc18",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "o como diferencio",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "8aa0ca980d714cadea5d62673a24a680"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212212346533"
+  },
+  {
+    "ref": "fc0fbce6-254e-4a90-91b3-bb1d138d44fc",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "si se puede en un documento para copiar y pegar",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "1dc638a4458c8ebb1f6ba267462db30a"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "eacbb279-c2de-478d-a025-9d9b0789ddeb",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "estaria genial",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "8875ed4cdd52875f1e3b50f4595f1913"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5215629724661"
+  },
+  {
+    "ref": "50b0ce5f-0dc5-44e3-8354-5ebe20fb31dd",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Ah ok",
+    "options": {},
+    "from": "5212212346533",
+    "refSerialize": "407c891b1ab6d355a6f32cd246ae3868"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212212346533"
+  },
+  {
+    "ref": "75fb326c-807f-4dc8-91ba-f9df477f9454",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "OK",
+    "options": {},
+    "from": "5212227234716",
+    "refSerialize": "27efe1bcae5e6b59a237f9d8eb034c0b"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212227234716"
+  },
+  {
+    "ref": "164d87a4-ecee-47d6-83e6-9e1bfab32abb",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Cuesta  $999",
+    "options": {},
+    "from": "5215629724661",
+    "refSerialize": "38cd1b3b5868d6062345c7d4ea7d50d0"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5215629724661"
+  },
+  {
+    "ref": "49bb2a39-d2e2-45e2-a329-2ee753497574",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Pero te entrego en este paquete 2 chip de prepago",
+    "options": {},
+    "from": "5215629724661",
+    "refSerialize": "84ea17195025b64d8ef491d49b5260a1"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5215629724661"
+  },
+  {
+    "ref": "7d1db5a0-9fde-44fc-a80d-b51c96b3806f",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "ok esta bien+",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "e4acf7d03455ff80990d6439a20202dd"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "51924135651"
+  },
+  {
+    "ref": "544c57ea-3371-43a0-bc97-a627261b2528",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "_event_media__8640a712-dacd-407a-bc60-43521f528cac",
+    "options": {},
+    "from": "5212227234716",
+    "refSerialize": "a8c437ca9926d5c3ce6dda79b4e9cef6"
+  },
+  {
+    "ref": "8a324c78-23e4-4934-a2ba-cee3976c762b",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Oye si",
+    "options": {},
+    "from": "5212212346533",
+    "refSerialize": "271db81603d85012e5f76faa04cc5b5a"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212212346533"
+  },
+  {
+    "ref": "e1f9b457-e516-4c91-8535-0d26ea069198",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Espera",
+    "options": {},
+    "from": "5212212346533",
+    "refSerialize": "7773ac6b0cb6b18099176efdef96be34"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212212346533"
+  },
+  {
+    "ref": "b16b172f-c6d9-43c8-b903-7a56262e9a7e",
+    "keyword": "37bf5a3e1a200956578861e74a986c68",
+    "answer": "Dejá le digo a la clienta",
+    "options": {},
+    "from": "5212212346533",
+    "refSerialize": "f567d4361865bad5ba1e1f8b665b386a"
+  },
+  {
+    "ref": "ans_1f7628ec-93b3-41d1-9aee-03299d029527",
+    "keyword": "key_a02ac6e5-e96f-4fa2-9f7d-5920da89dc2b",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "37bf5a3e1a200956578861e74a986c68",
+    "from": "5212212346533"
+  }
+]
