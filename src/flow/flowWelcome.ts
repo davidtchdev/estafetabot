@@ -2,7 +2,6 @@ import { addKeyword, EVENTS } from '@builderbot/bot';
 import { sendReaction, typing, delay } from '../utils/utils';
 import { agregarTelefono } from '~/utils/telefonos';
 import { join } from 'path'
-import { flowOpciones } from './flowOpciones';
 import GoogleSheetService from "../services/googleSheets";
 
 const googleSheet = new GoogleSheetService(
