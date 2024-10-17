@@ -1,6 +1,5 @@
 import { addKeyword, EVENTS } from '@builderbot/bot';
 import GoogleSheetService from "../services/googleSheets";
-import { flowOpciones } from './flowOpciones';
 import { unlinkSync } from 'fs';
 
 const googleSheet = new GoogleSheetService(
