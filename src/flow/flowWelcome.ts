@@ -84,7 +84,7 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                         const result = await googleSheet.updateSaldoDisponibleByPhoneNumber(ctx.from, precioEnvio);
                         console.log(result)
 
-                        await flowDynamic(`Tu compra se ha realizado con exito, tu pedido esta en proceso en unos minutos te enviaremos la guia.\nTu saldo es de *${restado}*`)
+                        await flowDynamic(`Tu compra se ha realizado con exito, tu pedido esta en proceso en unos minutos te enviaremos la guia.\n*Saldo antes de la compra:* ${saldoDisponible}\n*Saldo Disponible:* ${restado}`)
                     } else {
 
                         await flowDynamic(`Lo sentimos, el precio del envío es *${precioEnvio}* y tu saldo disponible es *${saldoDisponible}.* No puedes continuar.`);

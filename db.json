@@ -1,15 +1,15 @@
 [
   {
-    "ref": "91a58992-b33f-4b67-97bd-a0d93bd4a107",
-    "keyword": "a13c0d9357c2a0cd3f3b9cc1127d118c",
+    "ref": "184473a9-5954-4e70-a113-5959b663738e",
+    "keyword": "2c10bbfe5ffffda3df13253e0b8c292a",
     "answer": "*Solicitud de envío*\n*Response* #10085\n*Datos de envío :* pasaje las peñas\n*Paqueteria :* Test\n*Tipo :* Express \n*Peso :* 30 kg",
     "options": {},
     "from": "51924135651",
     "refSerialize": "7c34c18c1aac5960e529af331cf643f7"
   },
   {
-    "ref": "ans_2d4291b9-4790-4c13-9762-14db2036fe87",
-    "keyword": "key_d15cd43d-da78-491b-bb0d-4ddde585769b",
+    "ref": "ans_056e65e2-9884-4e4e-b29c-5aad31766006",
+    "keyword": "key_870d1425-8ed5-4a22-9fe1-5406c069424f",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -19,11 +19,11 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "2c10bbfe5ffffda3df13253e0b8c292a",
+    "refSerialize": "2db9f398506de14ab061c99a744882a7",
     "from": "51924135651"
   },
   {
-    "ref": "0a4f1862-0c88-475b-8db9-f5cf70251aea",
+    "ref": "c997f769-3380-4d80-9fd2-3e0d66c2d52a",
     "keyword": null,
     "answer": "Consultando saldo...",
     "options": {
@@ -36,9 +36,9 @@
     "refSerialize": "4a33c3c2e75d9cf2a3bb2026badf1c26"
   },
   {
-    "ref": "6764a7a7-4f60-4801-bc81-7ec5d851dfcc",
+    "ref": "4fb893c1-9c09-49e9-b825-9d6932d1b28f",
     "keyword": null,
-    "answer": "Tu compra se ha realizado con exito, tu pedido esta en proceso en unos minutos te enviaremos la guia.\nTu saldo es de 300",
+    "answer": "Lo sentimos, el precio del envío es *350* y tu saldo disponible es *300.* No puedes continuar.",
     "options": {
       "media": null,
       "buttons": [],
@@ -46,6 +46,55 @@
       "delay": 0
     },
     "from": "51924135651",
-    "refSerialize": "b84e6d8a1bdce9ae66234bebfa2af017"
+    "refSerialize": "9331cbfbb2601b140b407e21692ac6d2"
+  },
+  {
+    "ref": "5334664b-0de6-4a95-ae68-41986c203d47",
+    "keyword": "2db9f398506de14ab061c99a744882a7",
+    "answer": "*Solicitud de envío*\n*Response* #10085\n*Datos de envío :* pasaje las peñas\n*Paqueteria :* Test\n*Tipo :* Express \n*Peso :* 30 kg",
+    "options": {},
+    "from": "51924135651",
+    "refSerialize": "7c34c18c1aac5960e529af331cf643f7"
+  },
+  {
+    "ref": "ans_056e65e2-9884-4e4e-b29c-5aad31766006",
+    "keyword": "key_870d1425-8ed5-4a22-9fe1-5406c069424f",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2db9f398506de14ab061c99a744882a7",
+    "from": "51924135651"
+  },
+  {
+    "ref": "e8d08635-8dd5-4aa7-b0e5-26c6223237a1",
+    "keyword": null,
+    "answer": "Consultando saldo...",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51924135651",
+    "refSerialize": "4a33c3c2e75d9cf2a3bb2026badf1c26"
+  },
+  {
+    "ref": "8f68a922-cc67-4549-8a36-099ba64b3454",
+    "keyword": null,
+    "answer": "Tu compra se ha realizado con exito, tu pedido esta en proceso en unos minutos te enviaremos la guia.\n*Saldo antes de la compra:* 3000\n*Saldo Disponible:* 2650",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "51924135651",
+    "refSerialize": "6e9268bee1b8105225ee204d60c23e8f"
   }
 ]
