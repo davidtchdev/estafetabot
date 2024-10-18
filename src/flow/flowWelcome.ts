@@ -48,6 +48,7 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                     const precioEnvio = Number(precio); 
 
                     const saldoDisponible = Number(data.disponible);
+                    const restado = saldoDisponible - precioEnvio;
 
                     const generateShortNumericId = (): string => {
                         const timestamp = Date.now(); // Obtener el timestamp actual (13 dígitos)
@@ -83,7 +84,7 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                         const result = await googleSheet.updateSaldoDisponibleByPhoneNumber(ctx.from, precioEnvio);
                         console.log(result)
 
-                        await flowDynamic('Tus pedido esta procesandose en unos minutos te enviaremos la guia.')
+                        await flowDynamic(`Tu compra se ha realizado con exito, tu pedido esta en proceso en unos minutos te enviaremos la guia.\nTu saldo es de *${restado}*`)
                     } else {
 
                         await flowDynamic(`Lo sentimos, el precio del envío es *${precioEnvio}* y tu saldo disponible es *${saldoDisponible}.* No puedes continuar.`);
