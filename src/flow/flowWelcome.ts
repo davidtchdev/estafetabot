@@ -28,7 +28,7 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                 const pesoNumeroInt = match[5];
                 const peso = parseInt(pesoNumeroInt, 10);
 
-                await flowDynamic('Consultando saldo 🏸')
+                await flowDynamic('Consultando saldo...')
                 const data = await googleSheet.searchAndReturnRowByPhoneNumber(ctx.from);
 
                 if (data !== null) {
@@ -47,7 +47,15 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
 
                     const precioEnvio = Number(precio); 
 
-                    const saldoDisponible = Number(data.disponible); 
+                    const saldoDisponible = Number(data.disponible);
+
+                    const generateShortNumericId = (): string => {
+                        const timestamp = Date.now(); // Obtener el timestamp actual (13 dígitos)
+                        const randomPart = Math.floor(Math.random() * 1000); // Generar un número aleatorio de 3 dígitos
+                        return `${timestamp}${randomPart}`.substring(0, 13); // Combinar y cortar a 13 dígitos
+                    };
+                    
+                    const uniqueId = generateShortNumericId();
 
                     if (precioEnvio <= saldoDisponible) {
                         console.log(`El precio de ${precioEnvio} cubre el saldo disponible de ${saldoDisponible}. Continuar con la transacción.`);
@@ -58,7 +66,8 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                         const hora = now.toTimeString().split(' ')[0].substring(0, 5);
 
                         const orderData = {
-                            id: response,                  
+                            id: uniqueId,    
+                            folio: response,                
                             telefono: ctx.from,         
                             datos: datosEnvio,      
                             paqueteria: paqueteria,        
@@ -69,17 +78,20 @@ export const flowWelcome = addKeyword(EVENTS.WELCOME)
                             hora: hora,                    
                             proveedor: proveedores.nombre      
                         };
-                        await provider.sendText(`${proveedores.telefono}@s.whatsapp.net`, `${ctx.body}`);
-                        const subir = await googleSheet.saveOrder(orderData);
-                        await flowDynamic('Tus pedido esta procesandose en unos minutos te enviaremos la guia 🤖')
+                        await provider.sendText(`${proveedores.telefono}@s.whatsapp.net`, `${ctx.body}\n*ID:* ${uniqueId}`);
+                        await googleSheet.saveOrder(orderData);
+                        const result = await googleSheet.updateSaldoDisponibleByPhoneNumber(ctx.from, precioEnvio);
+                        console.log(result)
+
+                        await flowDynamic('Tus pedido esta procesandose en unos minutos te enviaremos la guia.')
                     } else {
 
-                        await flowDynamic(`🚫 Lo sentimos, el precio del envío es *${precioEnvio}* y tu saldo disponible es *${saldoDisponible}.* No puedes continuar.`);
+                        await flowDynamic(`Lo sentimos, el precio del envío es *${precioEnvio}* y tu saldo disponible es *${saldoDisponible}.* No puedes continuar.`);
                     }
 
 
                 } else {
-                    await flowDynamic('⚠️ Ups parece que no estas registrado en la base de datos, en unos momentos un asesor se comunicara contigo para asistirte 🤖');
+                    await flowDynamic('Ups parece que no estas registrado en la base de datos, en unos momentos un asesor se comunicara contigo para asistirte.');
                 }
 
             } else {

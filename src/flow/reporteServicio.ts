@@ -9,18 +9,32 @@ const googleSheet = new GoogleSheetService(
 export const reporteServicio = addKeyword(EVENTS.DOCUMENT)
     .addAction(async (ctx, { flowDynamic, provider, gotoFlow, state }) => {
 
-        const filename = ctx.message.documentMessage.fileName;
-        const id = filename.split('.').slice(0, -1).join('.');
 
         try {
+            const filename = ctx.message.documentMessage.fileName;
+            const id = filename.split('.').slice(0, -1).join('.');
 
-            const data = await googleSheet.reenviarPdf(id);
+            const extract13Digits = (input: string): string | null => {
+                // Usar expresión regular para encontrar una secuencia de 13 dígitos
+                const match = input.match(/\d{13}/); // Busca exactamente 13 dígitos consecutivos
+            
+                // Si se encontró un match, devolverlo
+                return match ? match[0] : null;
+            };
+            
+            // Ejemplo de uso
+
+            const extractedDigits = extract13Digits(id);       
+            
+            const data = await googleSheet.reenviarPdf(extractedDigits);
+            console.log(extractedDigits)
+
 
             if (data !== null) {
 
                 const localPath = await provider.saveFile(ctx, { path: '.' })
 
-                await provider.sendFile(`${data.telefono}@s.whatsapp.net`, localPath, `Paqueteria: ${data.paqueteria}\nTipo: ${data.tipo}\nPrecio: ${data.precio}`)
+                await provider.sendFile(`${data.telefono}@s.whatsapp.net`, localPath, `*Paqueteria:* ${data.paqueteria}\n*Tipo:* ${data.tipo}\n*Precio:* ${data.precio}\n*Folio:* ${data.folio}`)
 
 
                 try {
@@ -32,7 +46,7 @@ export const reporteServicio = addKeyword(EVENTS.DOCUMENT)
 
             } else {
 
-                await flowDynamic('no hay un pedido')
+                console.log('no hay pedido para este PDF')
 
             }
 

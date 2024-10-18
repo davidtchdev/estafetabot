@@ -64,6 +64,64 @@ class GoogleSheetService {
     }
 };
 
+
+updateSaldoDisponibleByPhoneNumber = async (phoneNumber: string, cantidad: number): Promise<any | null> => {
+  try {
+      // Cargar la información del documento
+      await this.doc!.loadInfo();
+      
+      // Seleccionar la primera hoja
+      const sheet = this.doc!.sheetsByIndex[0]; 
+
+      // Obtener todas las filas
+      const rows = await sheet.getRows(); // Puedes pasar { limit, offset } si necesitas paginación
+
+      // Limpiar el número de teléfono de guiones
+      const sanitizedPhoneNumber = phoneNumber.replace(/-/g, '');
+
+      // Recorrer las filas de la hoja
+      for (const row of rows) {
+          // Obtener el teléfono en la fila y limpiar guiones
+          const columTelefono = (row.get('Telefono') || '').replace(/-/g, '');
+          const columDisponible = parseFloat(row.get('Saldo Disponible')) || 0; // Convertir a número
+          
+          // Verificar si el teléfono coincide
+          if (columTelefono === sanitizedPhoneNumber) {
+              // Restar la cantidad enviada por parámetro al saldo disponible
+              const nuevoSaldo = columDisponible - cantidad;
+
+              // Evitar saldo negativo
+              if (nuevoSaldo < 0) {
+                  console.log('El saldo no puede ser negativo.');
+                  return null; 
+              }
+
+              // Usar .set() para actualizar la columna 'Saldo Disponible'
+              row.set('Saldo Disponible', nuevoSaldo.toString()); // Convertir a string antes de guardar
+
+              // Guardar los cambios en la fila
+              await row.save();
+
+              console.log(`Saldo actualizado para el teléfono: ${sanitizedPhoneNumber}`);
+              
+              return {
+                  telefono: columTelefono,
+                  saldoDisponibleAnterior: columDisponible,
+                  saldoDisponibleActualizado: nuevoSaldo
+              };
+          }
+      }
+
+      console.log('Número de teléfono no encontrado.');
+      return null; // No se encontró el número
+  } catch (err) {
+      console.error("Error en updateSaldoDisponibleByPhoneNumber:", err);
+      return null;
+  }
+};
+
+
+
 reenviarPdf = async (phoneNumber: string): Promise<any | null> => {
   try {
       await this.doc!.loadInfo();
@@ -76,6 +134,7 @@ reenviarPdf = async (phoneNumber: string): Promise<any | null> => {
       for (const row of rows) {
 
           const columId = row.get('ID'); 
+          const columFolio = row.get('Folio'); 
           const columTelefono = row.get('Telefono').replace(/-/g, '');
           const columDatos = row.get('Datos'); 
           const columPaqueteria = row.get('Paqueteria'); 
@@ -89,6 +148,7 @@ reenviarPdf = async (phoneNumber: string): Promise<any | null> => {
           if (columId === phoneNumber) {
               const foundObject = {
                   id: columId || '',
+                  folio: columFolio || '',
                   telefono: columTelefono || '', 
                   datos: columDatos || '',
                   paqueteria: columPaqueteria || '',
@@ -161,11 +221,15 @@ buscarPreciosporKg = async (sheetName: string): Promise<any[]> => {
       const columPeso = row.get('Peso Kg'); 
       const columTerrestre = row.get('Terrestre'); 
       const columExpress = row.get('Express'); 
+      const columCostoT = row.get('Costo Terrestre');
+      const columCostoE = row.get('Costo Express');
 
       const foundObject = {
         kg: columPeso || '',
         terrestre: columTerrestre || '',
-        express: columExpress|| ''
+        express: columExpress|| '',
+        costoT: columCostoT|| '',
+        costoE: columCostoE|| ''
       };
 
       results.push(foundObject);
@@ -210,6 +274,7 @@ searchBlackList = async (phoneNumber: string): Promise<any | null> => {
   
 saveOrder = async (data: {
   id: string,
+  folio: string,
   telefono: string,
   datos: string,
   paqueteria: string,
@@ -226,6 +291,7 @@ saveOrder = async (data: {
 
     const order = await sheet.addRow({
       ID: data.id,
+      Folio: data.folio,
       Telefono: data.telefono,
       Datos: data.datos,
       Paqueteria: data.paqueteria,
